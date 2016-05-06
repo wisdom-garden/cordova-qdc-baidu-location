@@ -120,6 +120,7 @@ public class BaiduLocation extends CordovaPlugin {
     //                }
     //            }
                 LOG.i(LOG_TAG, sb.toString());
+                JSONObject jsonNew = new JSONObject();
                 jsonNew.put("coords", json);
                 PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, jsonNew);
                 pluginResult.setKeepCallback(true);
